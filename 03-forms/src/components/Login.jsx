@@ -1,5 +1,9 @@
 import React from "react";
 
+
+
+
+
 export default function Login() {
   return(
     
@@ -16,6 +20,7 @@ export default function Login() {
                 <label htmlFor="password">Password</label>
                 <input id="password" type="password" name="password" />
             </div>
+           
         </div>
 
         <p className="form-actions">
@@ -23,7 +28,7 @@ export default function Login() {
                 Reset
             </button>
             <button className="button">
-                Login
+                Submit
             </button>
         </p>
 
