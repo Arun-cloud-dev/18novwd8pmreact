@@ -1,6 +1,7 @@
 import Counter from "./components/Counter";
 import Header from "./components/Header";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <>
     <Header/>
     <main>
-      <Login/>
+      {/* <Login/> */}
+      <Signup/>
     </main>
     {/* <Counter/> */}
     </>
