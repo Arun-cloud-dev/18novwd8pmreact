@@ -14,17 +14,24 @@ const [enteredValues , setEnteredValues] = useState({
     password: '',
     
 })
+
+const emailIsInvalid = !enteredValues.email.includes('@')
+
+
+
     function handleSubmit(event) {
         event.preventDefault();
         console.log(enteredValues)
-c
+        setEnteredValues({
+
+        })
 
     }
 
     function handleInputChange(identifirer ,value){
         setEnteredValues(prevvalues => ({
             ...prevvalues, 
-            [identifirer]: value
+            [identifirer]: value 
         }))
     }
 
@@ -52,6 +59,9 @@ c
                 onChange={(event) => (handleInputChange('email',event.target.value))}
                 value={enteredValues.email}
                 />
+                <div className="control-error">
+                    {emailIsInvalid && <p>Please enter the valid email address </p>}
+                </div>
             </div>
 
             <div className="control no-margin">
