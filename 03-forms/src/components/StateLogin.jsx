@@ -71,7 +71,7 @@ export default function Login() {
             {emailIsInvalid && <p>Please enter a valid email address.</p>}
           </div>
         </div>
-
+        
         <div className="control no-margin">
           <label htmlFor="password">Password</label>
           <input
