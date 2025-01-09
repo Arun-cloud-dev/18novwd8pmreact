@@ -2,7 +2,7 @@ import Counter from "./components/Counter";
 import Header from "./components/Header";
 import Login from "./components/StateLogin";
 import Signup from "./components/Signup";
-
+import Button from "./components/Button";
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
     <Header/>
     <main>
       <Login/>
-      {/* <Signup/> */}
+      <Signup/>
+      <Button/>
     </main>
     {/* <Counter/> */}
     </>

@@ -1,6 +1,6 @@
 
 import { useRef } from "react";
-
+import Button from "./Button";
 
 
 export default function Login() {
@@ -35,6 +35,7 @@ email.current.value="";
               
                 />
             </div>
+            <Button></Button>
 
             <div className="control no-margin">
                 <label htmlFor="password">Password</label>
